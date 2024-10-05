@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Hunter</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="bg-slate-300 relative lg:pb-80 pb-32">
+      <nav class="flex justify-between items-center w-11/12 mx-auto py-10">
+        <h1 class="text-2xl font-bold">Hot Gadgets</h1>
+        <button class="bg-blue-600 px-7 py-3 text-white rounded-lg">
+          Sign Up
+        </button>
+      </nav>
+
+      <!-- banner setion  -->
+
+      <section class="11/12 mx-auto flex flex-col justify-center items-center">
+        <h3 class="lg:text-6xl text-2xl font-bold pb-5">
+          Apple Iphone 13 Pro Max
+        </h3>
+        <p class="lg:w-1/2 w-11/12 text-center text-gray-600 font-normal">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected humou.
+        </p>
+        <button class="bg-blue-600 px-7 py-3 text-white rounded-lg my-8">
+          Buy Now
+        </button>
+      </section>
+    </header>
+    <div
+      class="w-11/12 mx-auto flex flex-col justify-center items-center absolute top-96 lg:left-14 left-3"
+    >
+      <img class="w-4/6" src="image.png" alt="" />
+    </div>
+
+    <!-- products -->
+    <section class="w-11/12 mx-auto lg:mt-72 mt-28 lg:pb-52">
+      <h4 class="text-center text-3xl font-bold">Search your phone</h4>
+      <div
+        class="flex justify-center items-center mt-5 lg:w-3/5 w-11/12 mx-auto mb-10"
+      >
+        <input
+          id="search-box"
+          class="w-full bg-gray-200 p-2 focus:outline-none"
+          type="search"
+          placeholder="Search your phone"
+        />
+        <button
+          onclick="handleSearch()"
+          class="bg-blue-600 px-6 py-2 text-white"
+        >
+          Search
+        </button>
+      </div>
+
+      <div id="spinner" class="text-center hidden">
+        <span class="loading loading-infinity loading-lg"></span>
+      </div>
+      <div class="grid lg:grid-cols-4 grid-cols-1 gap-4">
+        <!-- daynamic -->
+        <div
+          class="flex flex-col justify-center items-center space-y-3 border rounded p-2"
+        >
+          <img class="bg-slate-200 rounded" src="image.png" alt="" />
+          <h3 class="text-2xl font-bold">Phone Name</h3>
+          <p class="text-gray-500">Description</p>
+          <h3 class="text-xl font-bold">Price</h3>
+          <button class="bg-blue-600 px-6 py-2 text-white">show Details</button>
+        </div>
+        <!-- daynamic -->
+      </div>
+      <div class="text-center my-10">
+        <button
+          onclick="handleShowAll()"
+          class="bg-blue-600 px-6 py-2 text-white"
+        >
+          show All
+        </button>
+      </div>
+    </section>
+
+    <footer class="bg-slate-300 py-16">
+      <section class="w-11/12 mx-auto">
+        <div
+          class="flex lg:flex-row flex-col justify-between items-center mb-5"
+        >
+          <div>
+            <h1 class="text-2xl font-bold mb-2">Hot Gadgets</h1>
+            <p>You can definitely work</p>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="flex gap-3">
+              <i class="fa-brands fa-instagram text-blue-600 text-2xl"></i>
+              <i class="fa-brands fa-x-twitter text-blue-600 text-2xl"></i>
+              <i class="fa-brands fa-facebook text-blue-600 text-2xl"></i>
+              <i class="fa-brands fa-pinterest text-blue-600 text-2xl"></i>
+            </div>
+            <button class="bg-blue-600 px-6 py-2 text-white">
+              Join Premium
+            </button>
+          </div>
+        </div>
+        <hr class="text-blue-600" />
+        <div class="mt-5 grid lg:grid-cols-4 grid-cols-2 gap-5 justify-between">
+          <div class="flex flex-col">
+            <a href="">Product </a>
+            <a href="">Browse jobs</a>
+            <a href=""> Remote jobs</a>
+            <a href=""> Startup jobs</a>
+            <a href="">Company jobs</a>
+          </div>
+          <div class="flex flex-col">
+            <a href="">Popular </a>
+            <a href="">UIUX Design</a>
+            <a href="">Product Design</a>
+            <a href="">Back-End Developer</a>
+            <a href=""> Front-End Developer</a>
+          </div>
+          <div class="flex flex-col">
+            <a href="">Resource </a>
+            <a href="">Faq Support</a>
+            <a href="">Privacy </a>
+            <a href="">Policy</a>
+            <a href="">Terms of Service</a>
+          </div>
+          <div class="flex flex-col">
+            <a href="">Company </a>
+            <a href="">About Us</a>
+            <a href="">Contact Us</a>
+            <a href="">Career Tips</a>
+            <a href="">Careers</a>
+          </div>
+        </div>
+
+        <p class="text-center text-sm mt-10">
+          All right reserved by <span class="text-blue-600">Rakib Hossen</span>
+        </p>
+      </section>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
